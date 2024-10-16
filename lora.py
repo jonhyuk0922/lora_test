@@ -69,6 +69,7 @@ def get_training_args(output_dir, learning_rate=1e-3, train_batch_size=4, eval_b
         save_strategy="epoch",
         save_total_limit=3,
         load_best_model_at_end=True,
+        deepspeed="deepspeed_config.json",
     )
 
 def create_trainer(model, train_data, validation_data, tokenizer, output_dir):
