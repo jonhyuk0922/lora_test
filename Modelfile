@@ -1,0 +1,6 @@
+FROM city96/FLUX.1-dev-gguf
+
+TEMPLATE """[INST] {{  .System  }} {{ .Prompt  }} [/INST]"""
+
+PARAMETER stop "[INST]"
+PARAMETER stop "[/INST]"
